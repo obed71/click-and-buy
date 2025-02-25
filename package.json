@@ -1,0 +1,19 @@
+{
+  "name": "click-and-buy",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.1.1",
+    "axios": "^1.7.9",
+    "sass": "^1.85.0"
+  }
+}

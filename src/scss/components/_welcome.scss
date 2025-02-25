@@ -1,0 +1,70 @@
+@use '../variables' as *;
+
+$color-gradient: linear-gradient(45deg, $font-color, $accent-color);
+
+.welcome-txt {
+  display: grid;
+  grid-template-columns: auto;
+  padding-inline: 0 !important;
+  overflow: hidden;
+
+  span,
+  button {
+    display: block;
+  }
+
+  section {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  section.images {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 1s ease-in-out;
+    z-index: -1;
+  }
+
+  section.content {
+    padding-inline: calc((100% - $width) / 2);
+    background-color: rgba(255, 2, 158, 0.062);
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  span {
+    width: fit-content;
+    text-wrap: balance;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $background-color;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.15rem solid currentColor;
+    background-color: rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(0.5rem);
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+  }
+
+  button {
+    width: fit-content;
+    padding: 0.3rem 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-image: $color-gradient;
+
+    &:hover {
+      animation: button-hover 0.5s ease-in-out forwards;
+    }
+
+    @keyframes button-hover {
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

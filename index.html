@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click and Buy</title>
+    <script type="module" src="./src/js/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="full-width">
+      <p>
+        Free sheeping on all orders over
+        <span data-currency="usd">
+          <i class="fas fa-dollar-sign"></i>
+          <span class="price">100</span>
+        </span>
+      </p>
+      <section>
+        <select name="currency" id="currency-selection">
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+          <option value="rwf">RWF</option>
+        </select>
+        <select name="lang" id="lang">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="rw">RW</option>
+        </select>
+      </section>
+    </header>
+    <nav>
+      <div class="logo">
+        <a href="">
+          <span class="txt-accent-color">Click</span>
+          <span>And</span>
+          <span class="txt-accent-color">Buy</span>
+        </a>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="search">
+        <input type="search" placeholder="Search" />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="user-icon">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="cart">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="cart-count">0</div>
+      </div>
+    </nav>
+    <div class="welcome-txt full-width">
+      <section class="images">
+        <img
+          src="Retail-and-online-shopping-3205023785.jpg"
+          alt="Retail and online shopping"
+        />
+        <img
+          src="shopping-shannon-springs-2-3291188.jpg"
+          alt="shopping shannon springs"
+        />
+      </section>
+      <section class="content">
+        <span>
+          Get up to 50% off <br />
+          on selected items. Shop now <br />
+          and get the best deals <br />
+          on your favorite items.
+        </span>
+        <button>Shop Now</button>
+      </section>
+    </div>
+    <main>
+      <h2>
+        High rated products
+        <i class="fas fa-star"></i>
+      </h2>
+      <hr />
+      <section class="hight-rated-products"></section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  background-color: $background-color;
+  color: $font-color;
+
+  & > * {
+    width: $width;
+    margin-inline: auto;
+
+    &.full-width {
+      width: 100%;
+      padding-inline: calc((100% - $width) / 2);
+    }
+  }
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  background-color: $accent-color;
+  color: $background-color;
+  border-style: solid;
+}
+
+a {
+  text-decoration: none;
+}
+
+.txt-accent-color {
+  color: $accent-color;
+}
