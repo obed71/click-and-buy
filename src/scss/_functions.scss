@@ -1,3 +1,3 @@
 @function get-rem($px, $base-font-size: 16px) {
-  @return ($px / $base-font-size) * 1rem;
+  @return calc($px / $base-font-size) * 1rem;
 }
