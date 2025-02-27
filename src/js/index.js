@@ -5,3 +5,4 @@ import '@fontsource/poppins/700.css';
 
 import './products';
 import './welcome';
+import './currency';

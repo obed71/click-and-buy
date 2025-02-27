@@ -1,18 +1,26 @@
-$background-color: #1d1e26;
-$color: #ffffff;
-
 header {
+  $color: #ffffff;
+  $background-color: #1d1e26;
   background-color: $background-color;
   color: $color;
   display: flex;
   align-items: center;
   padding-block: 0.75rem;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
+  .price {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+  }
 
   select {
     background-color: $background-color;
     color: $color;
     border: none;
+    cursor: pointer;
 
     &:not(:last-child) {
       margin-inline-end: 1rem;
